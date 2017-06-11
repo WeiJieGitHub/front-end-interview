@@ -1,0 +1,22 @@
+@import "variables.scss";
+
+body {
+  font: $font-weight $font-size $font-family;
+  margin: 0;
+  color: $dark;
+}
+
+button {
+  font-size: 14px;
+  font-weight: 300;
+  box-sizing: border-box;
+  border: 1px solid $gray;
+  padding: 5px 15px;
+  background-color: $null;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}

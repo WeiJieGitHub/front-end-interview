@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="box">
+    <button id="open">打开弹层</button>    
+  </div>
+</div>
+
+<div id="modal" class="modal__overlay modal--close">
+  <div class="modal__inner">
+    <div class="modal__body">
+      <p>优点：可以直接作为遮罩层使用，容易与 transition 联合使用。</p>
+      <p>缺点: <a href="http://caniuse.com/transforms2d">兼容性</a>一般，要求 <code>.container</code> 触发 BFC 特性</p>
+      <p>适用场景：在现代浏览器下，作为遮罩层使用</p>
+      <button id="close">关闭弹层</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zn-ch">
+<head>
+  <meta charset="UTF-8">
+  <title>tableCell 垂直居中</title>
+  <link rel="stylesheet" href="../common/reset.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <p>优点：兼容性良好，在多个 <code>.container</code> 同排的时候可以实现等高居中。</p>
+      <div>缺点:
+        <code>.container</code> 的 <code>display</code> 属性被设置为了 <code>table-cell</code> 这意味着：
+        <ol>
+          <li><code>.container</code> 的宽度无论怎么设置都不能超过其父元素的宽度。</li>
+          <li>如果 <code>.container</code> 的父元素不是表格行，有的浏览器会静默的创建一个持有 <code>display: row</code> 属性的元素。</li>
+        </ol>
+      </div>
+      <p>适用场景：需要等高居中布局的场景，不能直接作为遮罩层。</p>
+    </div>
+  </div>
+</body>
+</html>

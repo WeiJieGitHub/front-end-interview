@@ -1,0 +1,49 @@
+@import "../common/variables.scss";
+
+.modal__overlay{
+  box-sizing: border-box;
+  min-height: 100vh;
+  width: 100vw;
+  position: fixed;
+  overflow-y: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: opacity 0.3s linear, background-color 0.3s linear;
+  opacity: 0;
+  background:rgba(0,0,0,0);
+}
+
+.modal__inner {
+  transition: transform 0.3s linear;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -30%);
+  max-height: 100%;
+}
+
+.modal--open {
+  opacity: 1;
+  background:rgba(0,0,0,0.7);
+}
+.modal--open .modal__inner {
+  transform: translate(-50%, -50%);
+}
+
+.modal--close {
+  display: none;
+}
+
+.modal__body {
+  box-sizing: border-box;
+  padding: 15px;
+  background-color: $null;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.body__modal--open {
+  overflow: hidden;
+}
